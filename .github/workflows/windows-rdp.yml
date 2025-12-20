@@ -6,7 +6,7 @@ on:
 jobs:
   secure-rdp:
     runs-on: windows-latest
-    timeout-minutes: 360000
+    timeout-minutes: 36000
 
     steps:
       - name: Checkout repository
@@ -37,5 +37,7 @@ jobs:
       - name: Maintain Connection
         shell: pwsh
         run: |
-          Write-Host "`n=== RDP READY ==="
-          Write-Host "You can now connect via Tailscale."
+          while ($true) {
+            Write-Host "[$(Get-Date)] RDP Active - Use Ctrl+C in workflow to terminate"
+            Start-Sleep -Seconds 600
+          }
