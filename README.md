@@ -1,6 +1,7 @@
 # Windows RDP Server via GitHub Actions
 
 GitHub Codespaces Link
+
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/BOOMDEE/CTS)
 
 ## Table of Contents
